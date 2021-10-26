@@ -30,7 +30,6 @@ public class VehicleDriver {
             else if (next.equals("Truck")) {
                 vehicles.add(new Truck(new Person(f1.nextLine(), f1.nextLine(), f1.nextLine()), f1.nextLine(), f1.nextLine(), Integer.parseInt(f1.nextLine()), Integer.parseInt(f1.nextLine()), Integer.parseInt(f1.nextLine()), Integer.parseInt(f1.nextLine())));
             }
-
         }
 
         ArrayList<Vehicle> oldest = new ArrayList<Vehicle>();

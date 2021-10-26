@@ -8,12 +8,6 @@ public class Taxi extends Automobile {
         this.ID = ID;
     }
 
-    public Taxi(Person owner, String make, String model, int year, int mileage, int numPassengers, boolean isSUV, String name, String address, String phone, String ID) {
-        super(owner, make, model, year, mileage, numPassengers, isSUV);
-        this.driver = new Person(name, address, phone);
-        this.ID = ID;
-    }
-
     public Person getDriver() {
         return this.driver;
     }
