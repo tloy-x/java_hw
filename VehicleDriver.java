@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class VehicleDriver {
-
     public static void main(String[] args) throws IOException{
         Scanner sc = new Scanner(System.in);
 
