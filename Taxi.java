@@ -4,15 +4,15 @@ public class Taxi extends Automobile {
 
     /**
      * Constructor for the Taxi class
-     * @param owner
-     * @param make
-     * @param model
-     * @param year
-     * @param mileage
-     * @param numPassengers
-     * @param isSUV
-     * @param driver
-     * @param ID
+     * @param owner the owner of the Taxi as a Person
+     * @param make the make of the Taxi in String
+     * @param model the model of the Taxi in String
+     * @param year the year of the Taxi in int
+     * @param mileage the mileage of the Taxi in int
+     * @param numPassengers the number of passengers of the Taxi in int
+     * @param isSUV whether or not the Taxi is an SUV in boolean
+     * @param driver the driver of the Taxi as a Person
+     * @param ID the ID of the driver in String
      */
     public Taxi(Person owner, String make, String model, int year, int mileage, int numPassengers, boolean isSUV, Person driver, String ID) {
         super(owner, make, model, year, mileage, numPassengers, isSUV);
