@@ -93,7 +93,7 @@ public class Person {
     public boolean equals(Object o) {
         if (o.getClass() != this.getClass())
             return false;
-
+            
         Person p = (Person) o;
         if (this.name.equals(p.name) && this.address.equals(p.address) && this.phone.equals(p.phone))
             return true;
