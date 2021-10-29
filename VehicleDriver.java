@@ -16,6 +16,8 @@ public class VehicleDriver {
         ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
         String next;
 
+        // Steps through the file until EOF looking for type keywords
+        // Then parse sequential data into appropriate constructor
         while (f1.hasNextLine()) {
             next = f1.nextLine();
             if (next.equals("Automobile")) {
@@ -31,6 +33,7 @@ public class VehicleDriver {
             }
         }
 
+        // Find object with lowest year
         ArrayList<Vehicle> oldest = new ArrayList<Vehicle>();
         Vehicle temp = vehicles.get(0);
         for (int i = 1; i < vehicles.size(); i++) {
@@ -41,8 +44,10 @@ public class VehicleDriver {
             }
         }
 
+        // Add to ArrayList
         oldest.add(temp);
 
+        // Grab all objects with same year except the same object
         for (int i = 1; i < vehicles.size(); i++) {
             Vehicle nextVehicle = vehicles.get(i);
 
@@ -51,6 +56,7 @@ public class VehicleDriver {
             }
         }
 
+        //OUTPUT 
         System.out.println("\nVehicles to be sold:");
         for (int i = 0; i < oldest.size(); i++) {
             System.out.printf("%s: %d: %s\n\n", oldest.get(i).getClass().toString().substring(6).toUpperCase(), i + 1, oldest.get(i));
